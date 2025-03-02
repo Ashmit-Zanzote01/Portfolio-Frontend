@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             // Send form data to the backend
-            const response = await fetch("http://localhost:8080/api/contact/submit", {
+            const response = await fetch("https://portfolio-backend-ez7b.onrender.com/api/contact/submit", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
