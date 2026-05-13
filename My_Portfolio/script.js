@@ -15,7 +15,7 @@ function closeMenu() {
 
 window.addEventListener('scroll', () => {
     if (scrollY > 50) {
-        navBar.classList.add('bg-gray-80', 'bg-opacity-50', 'backdrop-blur', 'shadow-sm');
+        navBar.classList.add('bg-gray-100', 'bg-opacity-50', 'backdrop-blur', 'shadow-sm');
         navLinks.classList.remove('bg-white', 'shadow-sm', 'bg-opacity-50');
     } else {
         navBar.classList.remove('shadow-sm'); // Keep blur effect instead of completely removing
