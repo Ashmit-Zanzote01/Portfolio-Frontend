@@ -4,15 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - The Dev Monk</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="./tailwind.config.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    gridTemplateColumns: {
+                        'auto': 'repeat(auto-fit, minmax(200px, 1fr))'
+                    },
+                    fontFamily: {
+                        Outfit: ["outfit", "sans-serif"],
+                        Ovo: ["Ovo", "serif"]
+                    },
+                    colors: {
+                        lightHover: '#fcf4ff',
+                        darkHover: '#2a004a',
+                        darkTheme: '#11001F',
+                    },
+                    boxShadow: {
+                        'black':'3px 3px 0 #000',
+                        'white':'3px 3px 0 #fff',
+                    }
+                }
+            },
+            variants: {
+                extend: {
+                    boxShadow: ['hover'],
+                }
+            },
+            darkMode: 'selector'
+        };
+    </script>
 
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
-
 </head>
 <body class="overflow-x-hidden leading-8 dark:bg-darkTheme dark:text-white">
 
